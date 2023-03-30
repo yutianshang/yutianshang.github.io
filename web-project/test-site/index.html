@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--  根元素 -->
+<html>
+
+  <!--  该元素的内容对用户不可见，其中包含例如面向搜索引擎的搜索关键字（keywords）、页面描述、CSS 样式表和字符编码声明等。 -->
+  <head>
+
+    <!--  该元素指定文档使用 UTF-8 字符编码 -->
+    <meta charset="utf-8">
+
+    <!--  该元素设置页面的标题，显示在浏览器标签页上，也作为收藏网页的描述文字。 -->
+    <title>My test page</title>
+
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" type="text/css">
+
+
+
+  </head>
+
+  <body>
+
+    <h1>My test page</h1>
+
+    <img src="images/1.jpg" alt="My test image">
+
+    <p>这是一个段落</p>
+
+    <p>At Mozilla, we're a global community of</p>
+
+    <ul>
+      <li>technologists</li>
+      <li>thinkers</li>
+      <li>builders</li>
+    </ul>
+
+    <p>working together… </p>
+
+    <a href="http://www.mozilla.org/">Mozilla Manifesto</a>
+
+  </body>
+
+  <button>切换用户</button>
+
+
+  <!-- 我们将 <script> 放在 HTML 文件的底部附近的原因是浏览器会按照代码在文件中的顺序加载 HTML。如果先加载的 JavaScript 期望修改其下方的 HTML，那么它可能由于 HTML 尚未被加载而失效。因此，将 JavaScript 代码放在 HTML 页面的底部附近通常是最好的策略。 -->
+  <script src="scripts/main.js" defer></script>
+</html>
